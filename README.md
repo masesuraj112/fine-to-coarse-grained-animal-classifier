@@ -1,5 +1,5 @@
 
-# COMP30027 Project 2 – Coarse-to-Fine Image Classification
+# Coarse-to-Fine Image Classification
 
 ## Overview
 
