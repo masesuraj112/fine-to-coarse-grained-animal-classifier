@@ -1,3 +1,73 @@
+
+# COMP30027 Project 2 – Coarse-to-Fine Image Classification
+
+## Overview
+
+This project investigates coarse-to-fine image classification using traditional machine learning and deep feature extraction techniques.
+
+The project consists of two tasks:
+
+- Task 1: Coarse-grained animal classification (10 animal classes)
+- Task 2: Fine-grained bird species classification (10 bird species)
+
+The aim is to evaluate how well features and models transfer from coarse to fine-grained classification.
+
+---
+
+## Methods
+
+### Feature Engineering
+
+Provided features:
+- Colour histograms
+- HOG (PCA)
+- Additional image statistics
+
+Handcrafted features:
+- Edge detection
+- SIFT + Bag of Visual Words
+- Local Binary Patterns (LBP)
+
+Deep features:
+- ResNet-50 feature extraction
+- EfficientNet feature extraction (Task 2)
+
+---
+
+## Models
+
+Task 1
+- Support Vector Machine (SVM)
+- Random Forest
+
+Task 2
+- Support Vector Machine (SVM)
+- Random Forest
+- Bagging ensemble with Logistic Regression
+
+---
+
+## Results
+
+### Task 1
+
+| Model | Kaggle Accuracy |
+|--------|----------------:|
+| SVM + ResNet | 92.9% |
+| Random Forest + Handcrafted Features | 56.9% |
+| SVM + Handcrafted Features | 38.4% |
+
+### Task 2
+
+| Model | Kaggle Accuracy |
+|--------|----------------:|
+| Bagging Ensemble | 92.2% |
+| SVM + ResNet | 87.8% |
+| Random Forest + Handcrafted Features | 37.8% |
+
+---
+
+## Repository Structure
 This file contains instructions on what each submission file represents and instructions on how to run them.
 
 task1.ipynb - contains all of the relevant code for Task 1 (Relevant machine learning code)
